@@ -42,5 +42,5 @@ Este conjunto de dados pode ser utilizado para fins de análise de dados prediti
 
 Sinta-se à vontade para ajustar e personalizar conforme necessário!
 
-![](src/picture/supermarket.jpg)
+![](picture/supermarket.jpg)
 
