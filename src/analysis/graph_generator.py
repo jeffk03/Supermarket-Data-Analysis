@@ -20,6 +20,6 @@ class VisualizationCreator:
         plt.bar(x, y)
         plt.xlabel(col,rotation=45, ha='right')
         plt.ylabel('Count')
-        plt.title(f'Quantity for {col}') 
         plt.grid(True)       
+        plt.title(f'Quantity for {col}') 
         plt.show()
