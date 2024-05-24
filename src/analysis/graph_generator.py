@@ -20,7 +20,6 @@ class VisualizationCreator:
         plt.bar(x, y)
         plt.xlabel(col,rotation=45, ha='right')
         plt.ylabel('Count')
-        plt.title(f'Quantity for {col}')
-        for i, v in enumerate(y):  # Adiciona os valores dentro do gráfico
-            plt.text(i, v + 0.1, str(v), ha='center'
+        plt.title(f'Quantity for {col}') 
+        plt.grid(True)       
         plt.show()
