@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 import pandas as pd
 import numpy as np
-from scipy.stats import gaussian_kde
 
 
 class VisualizationCreator:
@@ -41,15 +40,7 @@ class VisualizationCreator:
       plt.figure(figsize=(10, 6))
       sns.histplot(self.df[col], kde=True, bins=bins, color='blue')
 
-      # Calcula a KDE
-      data = self.df[col].dropna()
-      kde = gaussian_kde(data)
-      x_range = np.linspace(data.min(), data.max(), 1000)
-      kde_values = kde(x_range)
-
-      # Plota a linha KDE
-      plt.plot(x_range, kde_values, color='red', lw=2, label='KDE')
-
+      
       # Título e rótulos
       plt.title(f'Distribuição da coluna: {col}', fontsize=16)
       plt.xlabel(col,fontsize =14)
